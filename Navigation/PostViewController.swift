@@ -1,15 +1,17 @@
 import UIKit
 
 class PostViewController: UIViewController {
-    var titlePost: String = ""
+    //var titlePost: String = ""
+    
+    var titlePost: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .systemIndigo
         self.navigationItem.title = titlePost
-        let barButtonADD = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(redColor))
+        let barButtonAdd = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(redColor))
     
-        navigationItem.rightBarButtonItem = barButtonADD
+        navigationItem.rightBarButtonItem = barButtonAdd
     }
     
     @objc private func didTapButton(){
@@ -19,7 +21,7 @@ class PostViewController: UIViewController {
     
     @objc private func redColor(){
         let vc = InfoViewController()
-        vc.modalPresentationStyle = .automatic
+        //vc.modalPresentationStyle = .automatic
         self.present(vc, animated: true)
     }
     

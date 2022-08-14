@@ -1,8 +1,15 @@
-//
-//  Profile.swift
-//  Navigation
-//
-//  Created by Stanislav on 10.08.2022.
-//
-
 import Foundation
+import UIKit
+
+struct Profile {
+    let name: String
+    let surname: String
+    let job: String
+    let description: String
+    let image: UIImage?
+    
+    var fullname: String {
+        self.name + " " + self.surname
+    }
+    
+}
