@@ -3,7 +3,7 @@ import UIKit
 class ProfileViewController: UIViewController {
     
     private lazy var profileHeaderView: ProfileHeaderView = {
-        let profileHeaderView = ProfileHeaderView(frame: CGRect(x: 0, y: 55, width: 450, height: 450))
+        let profileHeaderView = ProfileHeaderView(frame: CGRect(x: 0, y: 100, width: 450, height: 700))
         //profileView.delegate = self
         profileHeaderView.backgroundColor = .systemGray
         return profileHeaderView
@@ -11,7 +11,7 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .systemBrown
+        self.view.backgroundColor = .lightGray
         self.title = "Страница профиля"
         self.view.addSubview(self.profileHeaderView) //добавление на экран
     }

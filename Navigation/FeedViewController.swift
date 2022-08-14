@@ -13,7 +13,7 @@ class FeedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .systemGray
+        self.view.backgroundColor = .systemBrown
         self.view.addSubview(self.button)
         self.button.center = self.view.center
         self.title = "Страница ленты"
@@ -21,7 +21,7 @@ class FeedViewController: UIViewController {
     
     @objc private func didTapButton(){
         let vc = PostViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
         vc.titlePost = post.title
+        self.navigationController?.pushViewController(vc, animated: true)        
     }
 }
