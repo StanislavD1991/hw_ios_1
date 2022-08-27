@@ -8,8 +8,7 @@ class FeedViewController: UIViewController {
         let stackView = UIStackView(frame: CGRect(x: 57, y: 410, width: 217.5, height: 77.5))
         stackView.distribution = .fillEqually
         stackView.spacing = 10
-        stackView.axis = .vertical //стек отображается вертикально
-        //stackView.backgroundColor = .systemRed
+        stackView.axis = .vertical
         return stackView
     }()
     
@@ -30,11 +29,6 @@ class FeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .systemBrown
-        /*
-        self.view.addSubview(self.button)
-        self.button.center = self.view.center
-        self.title = "Страница ленты"
-        */        
         self.view.addSubview(self.stackView)
         self.stackView.center = self.view.center
         self.stackView.addArrangedSubview(self.button)

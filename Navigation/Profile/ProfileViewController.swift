@@ -3,9 +3,6 @@ import UIKit
 class ProfileViewController: UIViewController {
     
     private lazy var profileHeaderView: ProfileHeaderView = {
-        //let profileHeaderView = ProfileHeaderView(frame: CGRect(x: 0, y: 100, width: 450, height: 700))
-        //let profileHeaderView = ProfileHeaderView(frame: CGRect(x: 0, y: 88, width: 414, height: 808))
-        //profileHeaderView.delegate = self
         let profileHeaderView = Navigation.ProfileHeaderView(frame: .zero)
         profileHeaderView.backgroundColor = .systemGray
         
@@ -18,14 +15,11 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = .lightGray
         self.title = "Страница профиля"
-        self.view.addSubview(self.profileHeaderView) //добавление на экран
-        
+        self.view.addSubview(self.profileHeaderView)
         let profileViewContraints = ProfileHeaderView()
-        //let fullNameLabelContraints = fullNameLabelContraints()
+        
         //активация констрейна
         NSLayoutConstraint.activate(profileViewContraints)
-        
-        //self.profileHeaderView.setup(with: self.profile) //передача данных
     }
     
     private func ProfileHeaderView() -> [NSLayoutConstraint]{

@@ -10,6 +10,5 @@ struct Profile {
     
     var fullname: String {
         self.name + " " + self.surname
-    }
-    
+    }   
 }
