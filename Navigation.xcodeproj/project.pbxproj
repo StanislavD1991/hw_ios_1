@@ -16,6 +16,7 @@
 		8559E571287CA72F00FF3B83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8559E570287CA72F00FF3B83 /* SceneDelegate.swift */; };
 		8559E578287CA73000FF3B83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8559E577287CA73000FF3B83 /* Assets.xcassets */; };
 		8559E57B287CA73000FF3B83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8559E579287CA73000FF3B83 /* LaunchScreen.storyboard */; };
+		85C4DC6F29EC892A00006FFB /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C4DC6E29EC892A00006FFB /* LogInViewController.swift */; };
 		85D678B428A3CC8200002EFC /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D678B328A3CC8200002EFC /* ProfileHeaderView.swift */; };
 		85D678B828A4334900002EFC /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D678B728A4334900002EFC /* Profile.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		8559E577287CA73000FF3B83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8559E57A287CA73000FF3B83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8559E57C287CA73000FF3B83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85C4DC6E29EC892A00006FFB /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		85D678B328A3CC8200002EFC /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		85D678B728A4334900002EFC /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +88,7 @@
 				852304EB287F54BD001C7B5B /* ProfileViewController.swift */,
 				85D678B328A3CC8200002EFC /* ProfileHeaderView.swift */,
 				85D678B728A4334900002EFC /* Profile.swift */,
+				85C4DC6E29EC892A00006FFB /* LogInViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				852304F0287F5B8F001C7B5B /* Post.swift in Sources */,
 				852304EA287F54AC001C7B5B /* FeedViewController.swift in Sources */,
 				8559E571287CA72F00FF3B83 /* SceneDelegate.swift in Sources */,
+				85C4DC6F29EC892A00006FFB /* LogInViewController.swift in Sources */,
 				85D678B428A3CC8200002EFC /* ProfileHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
