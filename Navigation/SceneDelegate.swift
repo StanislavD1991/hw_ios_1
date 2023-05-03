@@ -10,12 +10,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         self.window = UIWindow(windowScene: windowScene)
         let userController = UINavigationController(rootViewController: FeedViewController())
-        let lentaController = UINavigationController(rootViewController: ProfileViewController())
+        //let lentaController = UINavigationController(rootViewController: ProfileViewController())
+        let lentaController = UINavigationController(rootViewController: LogInViewController())
         let postController = UINavigationController(rootViewController: PostViewController())
         let tabBarController = UITabBarController()
         
         tabBarController.viewControllers = [
             userController, lentaController, postController
+            //userController, postController
         ]
         
         tabBarController.viewControllers?.enumerated().forEach{
